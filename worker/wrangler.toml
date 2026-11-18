@@ -1,0 +1,16 @@
+# Cloudflare Worker ayar dosyası
+# Kullanım yönergesi için repo kökündeki KURULUM.md dosyasına bakın.
+name = "smsfl-sinav-api"
+main = "worker.js"
+compatibility_date = "2024-11-01"
+
+# ↓↓↓ Bunları kendi bilgilerinizle değiştirin ↓↓↓
+[vars]
+REPO_OWNER = "GITHUB_KULLANICI_ADINIZ"
+REPO_NAME = "smsfl-sinav-cevaplari"
+REPO_BRANCH = "main"
+# ALLOWED_ORIGIN = "https://GITHUB_KULLANICI_ADINIZ.github.io"
+
+# GİZLİ değişkenler bu dosyaya YAZILMAZ; şu komutlarla eklenir:
+#   npx wrangler secret put GITHUB_TOKEN
+#   npx wrangler secret put TEACHER_PASSWORD
